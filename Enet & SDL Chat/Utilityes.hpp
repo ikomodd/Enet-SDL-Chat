@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 
 struct vector2 {
@@ -5,7 +7,15 @@ struct vector2 {
 	float X = 0;
 	float Y = 0;
 
-	vector2(float x = 0, float y = 0) {};
+	vector2(float x = 0, float y = 0): Y(y), X(x) {};
+};
+
+struct ivector2 {
+
+	int X = 0;
+	int Y = 0;
+
+	ivector2(int x = 0, int y = 0) : Y(y), X(x) {};
 };
 
 struct color3 {

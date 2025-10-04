@@ -134,6 +134,7 @@
     <ClCompile Include="ClientApp.cpp" />
     <ClCompile Include="ClientApp.h" />
     <ClCompile Include="MainClient.cpp" />
+    <ClCompile Include="UIs.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClientConnection.hpp" />

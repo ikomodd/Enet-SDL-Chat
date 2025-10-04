@@ -36,6 +36,9 @@
     <ClCompile Include="ClientApp.cpp">
       <Filter>Arquivos de Recurso\Interface</Filter>
     </ClCompile>
+    <ClCompile Include="UIs.cpp">
+      <Filter>Arquivos de Recurso\Interface\UIs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="json.hpp">

@@ -1,6 +1,11 @@
+#pragma once
+
 #include <iostream>
+#include <vector>
 
 #include <SDL3/SDL.h>
+
+#include "UIs.h"
 
 class app {
 public:
@@ -9,6 +14,10 @@ public:
 
 	SDL_Window* Window = nullptr;
 	SDL_Renderer* Renderer = nullptr;
+
+	group_element* Gui;
+
+	ivector2 WindowSize = {};
 
 	SDL_Event Event;
 

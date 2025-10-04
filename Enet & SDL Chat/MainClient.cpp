@@ -8,8 +8,6 @@
 #include "ClientConnection.hpp"
 #include "ClientNetwork.hpp"
 
-app App;
-
 client_connection Connection;
 
 int main() {
@@ -24,6 +22,26 @@ int main() {
 	//
 
 	SDL_Init(SDL_INIT_VIDEO);
+
+	// Interface
+
+	group_element* Gui = new group_element("ScreenGui", { 0, 0 }, { 1, 1 }, anchor_point::TOP_LEFT);
+
+	App.Gui = Gui;
+
+	//
+
+	group_element* UpBar = new group_element("UpBar", { 0, 0 }, { 1, 0.07 }, anchor_point::TOP_CENTER);
+
+	UpBar->BackgroundColor = { 255, 255, 255 };
+
+	Gui->AddChild(UpBar);
+
+	//
+
+
+
+	//
 
 	int FrameTime;
 
